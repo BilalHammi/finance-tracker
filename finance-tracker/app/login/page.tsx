@@ -9,9 +9,9 @@ export default function Login() {
             <Image 
             src={logoImg}
             alt='Logo'
-            className='max-[450px]:w-[50px] max-[450px]:h-[50px]'
+            className='max-[450px]:w-[50px] max-[450px]:h-[50px] max-[450px]:mt-3'
             />
-            <h1 className="font-bold text-black max-[450px]:mt-4">Welcome Back</h1>
+            <h1 className="font-bold text-black max-[450px]:my-5">Welcome Back</h1>
             <div>
               <LoginForm />
             </div>
