@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logoImg from '../../public/logo-mobile.png'
-
+import LoginForm from "../ui/login.component";
 
 export default function Login() {
   return (
@@ -13,6 +13,7 @@ export default function Login() {
             />
             <h1 className="font-bold text-black max-[450px]:mt-4">Welcome Back</h1>
             <div>
+              <LoginForm />
             </div>
         </div>
     </div>
