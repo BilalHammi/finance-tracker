@@ -24,6 +24,4 @@
     .desktop-container {
        @apply min-w-[780px] shrink;
     }
-
-    
 }

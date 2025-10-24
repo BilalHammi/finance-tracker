@@ -22,10 +22,11 @@ export default function loginForm() {
                 <p className=" text-gray-400 ml-1">Password</p>
             </div>
             <div className="flex flex-row">
-                <Image  src={PasswordDot} alt="Password icon" className="w-3 h-3 absolute ml-52 mt-3"/>
                 <button>
-                    <InputComponent widthCS="243px" heightCS="40px" typeInput="password" name="**********"/>
+                    <Image  src={PasswordDot} alt="Password icon" className="w-3 h-3 absolute ml-52 mt-3"/>
                 </button>
+
+                <InputComponent widthCS="243px" heightCS="40px" typeInput="password" name="**********"/>
             </div>
         </div>
         <BtnComponent name="Login" heightCS="32px" widthCS="245px"/>
