@@ -1,15 +1,29 @@
 @import "tailwindcss";
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .mobiel-container {
-        @apply   w-full min-w-[400px]  shrink;
+        @apply   min-w-[400px]  shrink;
     }
 
     .insidde-mobiel-container {
-        @apply w-[345px] h-[458px] bg-white  flex justify-start rounded-xl flex-col items-center pt-10
+        @apply w-[345px] h-[458px]  pt-4
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
+    .tablet-container {
+        @apply min-w-[600px] shrink
+    }
 
+    .inside-tablet-container {
+        @apply w-[423px] h-[482px] pt-10
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-container {
+       @apply min-w-[780px] shrink;
+    }
+
+    
 }
