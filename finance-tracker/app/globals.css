@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@media (max-width: 500px) {
+    .mobiel-container {
+        @apply   w-full min-w-[400px]  shrink;
+    }
+
+    .insidde-mobiel-container {
+        @apply w-[345px] h-[458px] bg-white  flex justify-start rounded-xl flex-col items-center pt-10
+    }
+}
+
+@media (max-width: 600px) {
+
+}
