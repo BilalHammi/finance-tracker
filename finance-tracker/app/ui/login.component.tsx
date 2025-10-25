@@ -41,8 +41,8 @@ export default function LoginForm() {
                         <Image src={PasswordIcon} alt="Lock icon" className="w-7 h-7"/>
                         <p className=" text-gray-400 ml-1">Password</p>
                     </div>
-                    <div className="flex flex-row">
-                        <Image  src={PasswordDot} alt="Password icon"  onClick={handlePasswordClick} className="w-3 h-3 fixed ml-54 top-[483px]"/>
+                    <div className="flex flex-row relative">
+                        <Image  src={PasswordDot} alt="Password icon"  onClick={handlePasswordClick} className="w-3 h-3 absolute ml-54 mt-3"/>
 
                         <InputComponent widthCS="243px" heightCS="40px" typeInput={passwordType} onChange={(e) => {
                             setForm(prev => ({...prev, password: e.target.value}))
