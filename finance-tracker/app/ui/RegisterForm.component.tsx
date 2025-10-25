@@ -6,6 +6,8 @@ import InputComponent from "../ui/input.component"
 import EmailIcon from "../../public/email-icon.png"
 import PasswordIcon from "../../public/lock-icon.png"
 import PasswordDot from "../../public/password-dot.png"
+import PhoneIcon from "../../public/phone-icon.png"
+import PersonIcon from "../../public/person-icon.png"
 import Image from "next/image";
 
 
@@ -29,21 +31,21 @@ export default function RegisterForm() {
             <div className="max-[600px]:flex max-[600px]:flex-col">
                 <div>
                     <div className="flex flex-row mb-2">
-                        <Image src={EmailIcon} alt="Email icon" className="h-7 w-7"/>
+                        <Image src={PersonIcon} alt="Person icon" className="h-7 w-7"/>
                         <p className="ml-1 text-gray-400">Firstname</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
                         setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="text" name="John.Doe@example.com"/>
+                    }} state={form.email} typeInput="text" name="John"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
-                        <Image src={EmailIcon} alt="Email icon" className="h-7 w-7"/>
+                        <Image src={PersonIcon} alt="Person icon" className="h-7 w-7"/>
                         <p className="ml-1 text-gray-400">Lastname</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
                         setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="text" name="John.Doe@example.com"/>
+                    }} state={form.email} typeInput="text" name="Doe"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
@@ -56,12 +58,12 @@ export default function RegisterForm() {
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
-                        <Image src={EmailIcon} alt="Email icon" className="h-7 w-7"/>
+                        <Image src={PhoneIcon} alt="Phone icon" className="h-7 w-7"/>
                         <p className="ml-1 text-gray-400">Phonenumber</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
                         setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="tel" name="John.Doe@example.com"/>
+                    }} state={form.email} typeInput="tel" name="0612345678"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
