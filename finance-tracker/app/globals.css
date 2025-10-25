@@ -25,3 +25,8 @@
        @apply min-w-[780px] shrink;
     }
 }
+
+
+    .register-container {
+        @apply h-[830px] w-[425px]
+    }
