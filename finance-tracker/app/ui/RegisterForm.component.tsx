@@ -13,7 +13,7 @@ import Image from "next/image";
 
 
 export default function RegisterForm() {
-    const [form, setForm] = useState({email: "", password: ""});
+    const [form, setForm] = useState({firstname: "", lastname: "", email: "", phonenumber: "", password: ""});
     const [passwordType, setPasswordType] = useState<"password" | "text">("password");
 
     
@@ -35,8 +35,8 @@ export default function RegisterForm() {
                         <p className="ml-1 text-gray-400">Firstname</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
-                        setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="text" name="John"/>
+                        setForm(prev => ({...prev, firstname: e.target.value}))
+                    }} state={form.firstname} typeInput="text" name="John"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
@@ -44,8 +44,8 @@ export default function RegisterForm() {
                         <p className="ml-1 text-gray-400">Lastname</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
-                        setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="text" name="Doe"/>
+                        setForm(prev => ({...prev, lastname: e.target.value}))
+                    }} state={form.lastname} typeInput="text" name="Doe"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
@@ -62,8 +62,8 @@ export default function RegisterForm() {
                         <p className="ml-1 text-gray-400">Phonenumber</p>
                     </div>
                     <InputComponent widthCS="243px" heightCS="40px"  onChange={(e) => {
-                        setForm(prev => ({...prev, email: e.target.value}))
-                    }} state={form.email} typeInput="tel" name="0612345678"/>
+                        setForm(prev => ({...prev, phonenumber: e.target.value}))
+                    }} state={form.phonenumber} typeInput="tel" name="0612345678"/>
                 </div>
                 <div>
                     <div className="flex flex-row mb-2">
