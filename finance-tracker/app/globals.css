@@ -8,6 +8,10 @@
     .insidde-mobiel-container {
         @apply w-[345px] h-[458px]  pt-4
     }
+
+    .inside-mb-register {
+        @apply w-[345px] h-[820px]
+    }
 }
 
 @media (min-width: 601px) {
@@ -18,15 +22,20 @@
     .inside-tablet-container {
         @apply w-[423px] h-[482px] pt-10
     }
+
+    .inside-tb-register {
+        @apply w-[425px] h-[820px]
+    }
 }
 
 @media (min-width: 1024px) {
     .desktop-container {
        @apply min-w-[780px] shrink;
     }
+
 }
 
 
-    .register-container {
-        @apply h-[830px] w-[425px]
-    }
+ .register-container {
+        @apply h-[830px] w-[425px] min-w-[400px] shrink
+}

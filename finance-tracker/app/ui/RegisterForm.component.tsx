@@ -27,7 +27,7 @@ export default function RegisterForm() {
     } 
 
     return (
-        <form>
+        <form className="">
             <div className="max-[600px]:flex max-[600px]:flex-col">
                 <div>
                     <div className="flex flex-row mb-2">

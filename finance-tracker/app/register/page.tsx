@@ -1,13 +1,12 @@
-
 import Image from "next/image";
 import Link from 'next/link';
 import logoImg from '../../public/logo-mobile.png'
 import RegisterForm from "../ui/RegisterForm.component";
 
-export default function Login() {
+export default function Register() {
   return (
-    <div className="flex items-center justify-center w-full h-full">
-       <div className="register-container bg-white flex justify-center rounded-xl flex-col items-center mx-10">
+    <div className="flex items-center justify-center w-full mobiel-container tablet-container desktop-container h-full ">
+       <div className="inside-mb-register inside-tb-register inside-tablet-container bg-white flex justify-center rounded-xl flex-col items-center">
             <Image 
             src={logoImg}
             alt='Logo'
