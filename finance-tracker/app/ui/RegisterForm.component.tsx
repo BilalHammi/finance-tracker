@@ -23,7 +23,7 @@ export default function RegisterForm() {
     } 
 
     const handleForm = () => {
-    console.log("I am an Form!");
+        console.log("I am an Form!");
     } 
 
     return (

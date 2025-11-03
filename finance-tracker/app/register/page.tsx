@@ -5,7 +5,7 @@ import RegisterForm from "../ui/RegisterForm.component";
 
 export default function Register() {
   return (
-    <div className="flex items-center justify-center w-full mobiel-container tablet-container desktop-container h-full ">
+    <div className="flex items-center justify-center w-full mobiel-container tablet-container desktop-container h-full">
        <div className="inside-mb-register inside-tb-register inside-tablet-container bg-white flex justify-center rounded-xl flex-col items-center">
             <Image 
             src={logoImg}

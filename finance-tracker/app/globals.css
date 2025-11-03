@@ -24,7 +24,7 @@
     }
 
     .inside-tb-register {
-        @apply w-[425px] h-[820px]
+        @apply w-[425px] h-[820px] pt-0
     }
 }
 
